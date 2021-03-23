@@ -23,15 +23,15 @@ const data = {
 // })
 
 const dhomComponent = {
-  data: function() {
+  data: function () {
     return data
   },
   methods: {
-    incrementar() {
-      this.contador++;
+    incrementar () {
+      this.contador++
     }
   },
-  template:`
+  template: `
     <div>
       <h1>{{ titulo }}</h1>
       <button @click="incrementar">Clicado {{ contador }}</button>
@@ -39,16 +39,19 @@ const dhomComponent = {
   `
 }
 
-Vue({
+const vm1 = new Vue({
   el: '#app',
   components: {
     'dhom-component': dhomComponent
   }
 })
 
-Vue({
+const vm2 = new Vue({
   el: '#app2',
   components: {
     'dhom-component': dhomComponent
   }
 })
+
+vm1.$mount()
+vm2.$mount()
