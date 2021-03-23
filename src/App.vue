@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import AppContador from './AppContador'
-import AppHeader from './AppHeader'
+import AppContador from './components/contador/AppContador'
+import AppHeader from './components/shared/AppHeader'
 
 export default {
   components: {
