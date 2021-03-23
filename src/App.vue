@@ -1,13 +1,18 @@
 <template>
-  <app-contador/>
+  <div>
+    <app-header/>
+    <app-contador/>
+  </div>
 </template>
 
 <script>
-import AppContador from './AppContador.vue'
+import AppContador from './AppContador'
+import AppHeader from './AppHeader'
 
 export default {
   components: {
-    'app-contador': AppContador
+    'app-contador': AppContador,
+    AppHeader
   }
 }
 </script>
